@@ -35,7 +35,7 @@ make
 ## What is patched
 
 
-To get the base-repo setup I originally  bdid this:
+To get the base-repo setup I originally  did this:
 
 ```sh
 wget http://beebem-unix.bbcmicro.com/download/beebem-0.0.13.tar.gz
