@@ -24,9 +24,10 @@ cd ../..
 git clone https://github.com/konsumer/beebem.git
 cd beebem
 
-# for arm64, you will need to adjust to your arch
+
 touch aclocal.m4 configure
 ./reconf
+# for arm64, you will need to adjust to your arch
 ./configure --prefix=/opt/beebem --enable-econet --build=aarch64-unknown-linux-gnu
 make
 ```
@@ -50,11 +51,6 @@ wget http://beebem-unix.bbcmicro.com/download/beebem-0.0.13_menu_crash.patch
 patch -p0 < beebem-0.0.13_64bit.patch
 patch -p0 < beebem-0.0.13-keys.patch
 patch -p0 < beebem-0.0.13_menu_crash.patch
-
-# setup
-
-cd beebem-0.0.13
-./configure --prefix=/opt/beebem --enable-econet --build=aarch64-unknown-linux-gnu
 ```
 
 It would not build at this point, so I made a few typedefs and moved the `includes` around a bit, and now it will build with `make`.
