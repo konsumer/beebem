@@ -1,13 +1,10 @@
 This is a patched version of [beebem-unix](http://beebem-unix.bbcmicro.com/) that will compile with sdl-compat (for use with SDL2.)
 
-# installing
+## installing
 
 You should be able to install on a debian/ubuntu system like this:
 
 ```
-docker run --platform linux/arm64 -it --rm -v "${PWD}:/work" -w /work ubuntu bash
- 
- 
 # system setup
 
 apt update
@@ -22,15 +19,15 @@ cd build
 cmake ..
 make
 make install
+ldconfig
 cd ../..
 
 git clone https://github.com/konsumer/beebem.git
 cd beebem
 
-
+# for arm64, you will need to adjust to your arch
 touch aclocal.m4 configure
 ./reconf
-# for arm64, you will need to adjust to your arch
 ./configure --prefix=/opt/beebem --enable-econet --build=aarch64-unknown-linux-gnu
 make
 ```
