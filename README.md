@@ -1,4 +1,4 @@
-This is a patched version of [beebem-unnix](http://beebem-unix.bbcmicro.com/) that will compile with sdl-compat (for use with SDL2.)
+This is a patched version of [beebem-unix](http://beebem-unix.bbcmicro.com/) that will compile with sdl-compat (for use with SDL2.)
 
 To get teh base-repo setup I did this:
 
