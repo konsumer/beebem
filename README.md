@@ -26,6 +26,7 @@ cd beebem
 
 # for arm64, you will need to adjust to your arch
 touch aclocal.m4 configure
+./reconf
 ./configure --prefix=/opt/beebem --enable-econet --build=aarch64-unknown-linux-gnu
 make
 ```
