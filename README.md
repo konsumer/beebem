@@ -5,6 +5,9 @@ This is a patched version of [beebem-unix](http://beebem-unix.bbcmicro.com/) tha
 You should be able to install on a debian/ubuntu system like this:
 
 ```
+docker run --platform linux/arm64 -it --rm -v "${PWD}:/work" -w /work ubuntu bash
+ 
+ 
 # system setup
 
 apt update
