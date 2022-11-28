@@ -26,7 +26,7 @@ git clone https://github.com/konsumer/beebem.git
 cd beebem
 
 # for arm64, you will need to adjust to your arch
-touch aclocal.m4 configure
+touch aclocal.m4 configure README
 ./reconf
 ./configure --prefix=/opt/beebem --enable-econet --build=aarch64-unknown-linux-gnu
 make
